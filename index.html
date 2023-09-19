@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="script.js"></script> -->
 </head>
 <body>
 
@@ -28,7 +29,7 @@
             <div class="icons">
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-user" id="showLoginForm"></i>
             </div>
 
         </nav>
@@ -594,7 +595,8 @@
 
     <!--Login Form-->
     
-    <div class="login_form">
+   <div class="modal hidden" id="loginForm">
+    <div class="login_form" >
         <div class="left">
             <img src="image/logshoes.png">
         </div>
@@ -628,6 +630,7 @@
 
         </div>
 
+   </div>
     </div>
 
 
@@ -673,13 +676,23 @@
                 <h1>Newsletter</h1>
                 <div class="search_bar">
                     <input type="text" placeholder="You email id here">
-                    <button type="submit">Subscribe</button>
+                    <button id="showLoginForm" type="submit">Subscribe</button>
                 </div>
             </div>
 
         </div>
     </footer>
+<script>
+  //lấy showLoginForm và loginForm 
+    var showLoginForm = document.getElementById("showLoginForm");
+    var loginForm = document.getElementById("loginForm");
+    //nhấn vào showLoginForm thì hiện loginForm nếu nhấn lại icon sẽ thoát
+    showLoginForm.onclick = function(){
+        loginForm.classList.remove("hidden");
+    }
+    
 
+</script>
     
 </body>
 </html>
