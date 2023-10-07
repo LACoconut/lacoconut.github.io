@@ -295,9 +295,10 @@ section .main .button:hover i{
 /*Cart*/
 .cart{
     width: 50%;
-    margin: auto;
+    margin-top: 58px;
     text-align: center;
     padding-top: 30px;
+
 }
 .cart h2{
     margin-bottom: 30px;
@@ -319,7 +320,7 @@ section .main .button:hover i{
     width: 400px;
     right: 0;
     top: 0;
-    background: linear-gradient(to right, #CC66ff , #ff3300);
+    background: linear-gradient(to right, #efebf0 , #ccc5c3);
     padding: 12px 20px;
     overflow-y: scroll;
     right: -100%;
@@ -342,6 +343,7 @@ section .main .button:hover i{
     cursor: pointer;
     margin-bottom: 30px;
 }
+
 
 
 
